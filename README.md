@@ -12,7 +12,7 @@ Hardware Specification : Will be soon
 
 🎯 Installation
 
-How to launch a Kyverno setup : Pleace talk with me directly over the Linkedin 
+How to launch a Kyverno setup : Please talk with me directly 
 
 🚀 
 
