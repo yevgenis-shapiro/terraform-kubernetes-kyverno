@@ -12,9 +12,9 @@ Hardware Specification : Will be soon
 
 🎯 Installation
 
-How to launch a Kyverno setup : Please talk with me directly 
+How to launch a Kyverno Policy
 
-## 
+## Example 
 
 ⚙️ Disallow NodePort : 
 A Kubernetes Service of type NodePort uses a host port to receive traffic from any source. A NetworkPolicy cannot be used to control traffic to host ports. Although NodePort Services can be useful, their use must be limited to Services with additional upstream security checks. This policy validates that any new Services do not use the `NodePort` type.
