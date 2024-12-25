@@ -14,9 +14,9 @@ Hardware Specification : Will be soon
 
 How to launch a Kyverno setup : Please talk with me directly 
 
-⚙️
+## 
 
-Disallow NodePort : 
+⚙️ Disallow NodePort : 
 A Kubernetes Service of type NodePort uses a host port to receive traffic from any source. A NetworkPolicy cannot be used to control traffic to host ports. Although NodePort Services can be useful, their use must be limited to Services with additional upstream security checks. This policy validates that any new Services do not use the `NodePort` type.
 
 ```
@@ -53,11 +53,9 @@ spec:
           =(type): "!NodePort"
 ```
 
-
-⚙️
-Drop All Capabilities :
+⚙️ Drop All Capabilities :
 Capabilities permit privileged actions without giving full root access. All capabilities should be dropped from a Pod, with only those required added back. This policy ensures that all containers explicitly specify the `drop: ["ALL"]` ability. Note that this policy also illustrates how to cover drop entries in any case although this may not strictly conform to the Pod Security Standards
-## 
+
 ```
 apiVersion: kyverno.io/v1
 kind: ClusterPolicy
